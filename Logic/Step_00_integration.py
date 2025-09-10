@@ -7,5 +7,5 @@ class IntegrationTransformer:
         Por ahora, solo muestra un preview (display) y retorna el DataFrame sin cambios.
         """
         
-        print(df.head(preview_rows))
+        df = df
         return df
