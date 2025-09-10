@@ -8,10 +8,12 @@ def run_pipeline():
 
     # Paso 1: Integración
     df = IntegrationTransformer().integrate_data(df)
+ 
 
-    # Mostrar resultado
-    print("=== DataFrame Integrado ===")
-    print(df.head())  # primeras filas
+
+
+######################## Ejecucion ####################################
+
 
 if __name__ == "__main__":
     run_pipeline()
