@@ -9,8 +9,8 @@ class FeatureEngenieringTransformer:
         """
 
         
-        df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
-        df = df[df["target"] == 1]
+        #df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
+        #df = df[df["target"] == 1]
 
         print("🔄  Check  Step_2 --> 📊")
         print(df)
