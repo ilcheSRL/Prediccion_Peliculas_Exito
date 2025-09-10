@@ -11,5 +11,6 @@ def run_pipeline():
 
     # Paso 2: Integración
     df = IntegrationTransformer().integrate_data(customers)
+    display(df)
 
     return df
