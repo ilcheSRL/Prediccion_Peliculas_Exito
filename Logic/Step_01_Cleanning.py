@@ -10,6 +10,6 @@ class CleaningTransformer:
          
         df = df.loc[df["periodo"] > 202310].copy()
         df = df
-        print("🔄  Running  Step_1...........")
+        print("🔄  Check  Step_1 --> 📊")
       
         return df
