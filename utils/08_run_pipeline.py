@@ -1,20 +1,12 @@
-import pandas as pd
-from Logic._00_Integracion import IntegrationTransformer
-from project.constants import Data_N1  # importar la constante con la ruta
+from constants import Data_N1
+from utils.utils import Utils
+from business_logic.integration import IntegrationTransformer
 
 def run_pipeline():
-    # Leer el DataFrame desde constants.py
-    df = pd.read_csv(Data_N1)
+    # Paso 1: Lectura de datos con Utils
+    customers = Utils.load_table(Data_N1)
 
-    # Paso 1: Integración
-    df = IntegrationTransformer().integrate_data(df)
- 
+    # Paso 2: Integración
+    df = IntegrationTransformer().integrate_data(customers)
 
-
-
-######################## Ejecucion ####################################
-
-
-if __name__ == "__main__":
-    run_pipeline()
-
+    return df
