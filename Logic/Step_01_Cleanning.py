@@ -8,7 +8,7 @@ class CleaningTransformer:
         """
  
          
-        df = df.loc[df["periodo"] > 202310].copy()
+        #df = df.loc[df["periodo"] > 202310].copy()
         df = df
         print("🔄  Check  Step_1 --> 📊")
       
