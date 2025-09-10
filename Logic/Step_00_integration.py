@@ -8,5 +8,5 @@ class IntegrationTransformer:
         """
         
         df = df
-        print("🔄  Check  Step_0 --> 📊")
+        print("🔄  Check  Step_0 --> INTEGRACION DE DATOS 📊")
         return df
