@@ -8,6 +8,6 @@ class IntegrationTransformer:
         """
         df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
         df = df[df["periodo"] > 202301]
-
+        df.show()
       
         return df
