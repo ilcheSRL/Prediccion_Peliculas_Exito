@@ -2,7 +2,7 @@
 
 from utils.utils import Utils
 from Logic.Step_00_integration import IntegrationTransformer
-from Logic.Step_01_Cleanning import IntegrationTransformer
+from Logic.Step_01_Cleanning import CleaningTransformer
 
 from Recursos.constante import (Data_N1)
  
