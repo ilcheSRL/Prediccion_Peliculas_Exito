@@ -7,7 +7,8 @@ class CleaningTransformer:
         Por ahora, solo muestra un preview (display) y retorna el DataFrame sin cambios.
         """
  
-        df = df[df["periodo"] > 202310]
+         
+        df = df.loc[df["periodo"] > 202310].copy()
         df = df
         print("🔄  Running  Step_1...........")
       
