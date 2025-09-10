@@ -1,6 +1,9 @@
 from constante import Data_N1
 from utils.utils import Utils
 from business_logic.integration import IntegrationTransformer
+from constants import (Data_N1)
+
+
 
 def run_pipeline():
     # Paso 1: Lectura de datos con Utils
