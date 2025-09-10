@@ -7,8 +7,12 @@ class FeatureEngenieringTransformer:
         Punto inicial de integración.
         Por ahora, solo muestra un preview (display) y retorna el DataFrame sin cambios.
         """
+
+        
         df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
         df = df[df["target"] == 1]
+
+        print("🔄  Running  Step_2...........")
         print(df)
 
       
