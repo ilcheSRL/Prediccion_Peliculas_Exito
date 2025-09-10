@@ -1,6 +1,6 @@
 import pandas as pd
 
-class IntegrationTransformer:
+class CleaningTransformer:
     def Cleaning_Data(self, df: pd.DataFrame, preview_rows: int = 5) -> pd.DataFrame:
         """
         Punto inicial de integración.
