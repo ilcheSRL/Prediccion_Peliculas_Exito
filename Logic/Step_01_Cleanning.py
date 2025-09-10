@@ -8,6 +8,6 @@ class CleaningTransformer:
         """
         df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
         df = df[df["periodo"] > 202301]
-        df.show()
+        show(df)
       
         return df
