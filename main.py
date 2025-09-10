@@ -11,7 +11,7 @@ def run_pipeline():
 
     # Paso 2: Integración
     df = IntegrationTransformer().integrate_data(customers)
- 
+    df = CleaningTransformer().clean_data(df)
 
     return df
  
