@@ -9,6 +9,6 @@ class CleaningTransformer:
         df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
         df = df[df["periodo"] > 202310]
         df = df
-
+        print("🔄  Running  Step_1...........")
       
         return df
