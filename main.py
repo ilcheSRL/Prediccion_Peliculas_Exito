@@ -2,7 +2,7 @@
 
 from utils.utils import Utils
 from Logic.Step_00_integration import IntegrationTransformer
-from constante import (Data_N1)
+from Recursos.constante import (Data_N1)
  
 
 def run_pipeline():
