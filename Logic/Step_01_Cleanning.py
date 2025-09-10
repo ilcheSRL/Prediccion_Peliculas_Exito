@@ -7,7 +7,7 @@ class CleaningTransformer:
         Por ahora, solo muestra un preview (display) y retorna el DataFrame sin cambios.
         """
         df["periodo"] = pd.to_numeric(df["periodo"], errors="coerce")
-        df = df[df["periodo"] > 202301]
+        df = df[df["periodo"] > 202401]
         print(df)
 
       
