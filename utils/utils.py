@@ -8,4 +8,8 @@ class Utils:
  
             return df
        
-
+    def load_table_csv(path: str) -> pd.DataFrame:
+ 
+            df = pd.read_csv(path, header = True, Sep = ",")
+ 
+            return df
