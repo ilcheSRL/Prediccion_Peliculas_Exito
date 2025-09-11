@@ -7,7 +7,8 @@ from Logic.Step_02_Feature_Engenierring import FeatureEngenieringTransformer
 
 
 #######################################################
-from Recursos.constante import (Data_N1, Data_N2)
+from Recursos.constante import Data_N1
+from Recursos.constante import Data_N2
  
 
 def run_pipeline():
