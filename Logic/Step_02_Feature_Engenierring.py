@@ -13,7 +13,7 @@ class FeatureEngenieringTransformer:
         #df = df[df["target"] == 1]
 
         print("🔄  Check  Step_2 --> INGENIERIA DE VARIABLES📊")
-        display(df.head())
+        df.head()
 
       
         return df
