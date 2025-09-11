@@ -4,12 +4,16 @@ from utils.utils import Utils
 from Logic.Step_00_integration import IntegrationTransformer
 from Logic.Step_01_Cleanning import CleaningTransformer
 from Logic.Step_02_Feature_Engenierring import FeatureEngenieringTransformer
-from Recursos.constante import (Data_N1)
+
+
+#######################################################
+from Recursos.constante import (Data_N1, Data_N2)
  
 
 def run_pipeline():
     # Paso 1: Lectura de datos con Utils
     customers = Utils.load_table(Data_N1)
+    BaseMovie = Utils.load_table(Data_N2)
 
     # Paso 2: Integración
     df = IntegrationTransformer().integrate_data(customers)
