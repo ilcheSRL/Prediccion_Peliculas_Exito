@@ -14,6 +14,7 @@ from Recursos.constante import Data_N2
 def run_pipeline():
     # Paso 1: Lectura de datos con Utils
     customers = Utils.load_table(Data_N1)
+ 
     BaseMovie = Utils.load_table_csv(Data_N2)
 
     # Paso 2: Integración
