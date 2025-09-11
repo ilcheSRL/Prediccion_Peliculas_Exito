@@ -18,7 +18,7 @@ def run_pipeline():
     BaseMovie = Utils.load_table_csv(Data_N2)
 
     # Paso 2: Integración
-    df = IntegrationTransformer().integrate_data(customers)
+    df = IntegrationTransformer().integrate_data(BaseMovie)
     df = CleaningTransformer().Cleaning_Data(df)
     df = FeatureEngenieringTransformer().Feature_Step_001_Data(df)
 
